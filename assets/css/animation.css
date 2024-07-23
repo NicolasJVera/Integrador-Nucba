@@ -1,0 +1,39 @@
+/* Suavidad al scroll */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* Animaciones */
+
+@keyframes backgroundScroll {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+.backgroundScroll {
+    background: url('../img/background-game.webp') no-repeat center center/cover;
+    animation: backgroundScroll 10s linear infinite;
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+#hero {
+    z-index: 1;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}

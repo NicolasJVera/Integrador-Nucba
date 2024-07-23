@@ -1,0 +1,183 @@
+:root {
+  --primary-a: #581b1b;
+  --primary-b: #040404;
+  --blanco: #ffff;
+  --text: #d2c8ae;
+
+  --font-primary: "Alegreya Sans", sans-serif;
+  --font-diablo: "Diablo", sans-serif;
+  --font-text: "Old Fenris";
+
+  --max-width: 1200px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  /* Header */
+  .navbar-list {
+    position: absolute;
+    top: 65px;
+    left: 5%;
+    right: 10%;
+    flex-direction: column;
+    width: 90%;
+    background: var(--primary-b);
+    border: 1px solid var(--blanco);
+    border-top: 0;
+    border-radius: 0px 0px 15px 15px;
+    gap: 35px;
+    padding: 45px 0;
+    margin: 15px 0;
+    display: none;
+  }
+
+  .navbar-list a {
+    color: var(--negro);
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .menu-label {
+    display: flex;
+  }
+
+  #menu-toggle:checked + .navbar-list {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero-img {
+    width: 400px;
+  }
+
+  .hero-text {
+    font-size: 0.9rem;
+    max-width: 700px;
+  }
+
+  /* presentacion */
+  #presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .presentation-text,
+  .presentation-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  .presentation-img {
+    margin-right: 0;
+  }
+
+  /* COMO JUGAR */
+
+
+  /* CLASES */
+  .clase {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .clase-img,
+  .clase-logo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .clase-info {
+    justify-content: center;
+    text-align: center;
+  }
+
+
+  .news h4 {
+    font-size: 20px;
+  }
+
+  .news-container {
+    width: 80%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacto form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  button {
+    width: 80%;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer .footer-content {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .footer .footer-section {
+    text-align: center;
+  }
+
+  .footer .footer-section.contact {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  /*Header */
+  .navbar {
+    gap: 0;
+  }
+
+  .logo {
+    width: 3rem;
+  }
+
+  .cart-icon {
+    width: 100%;
+  }
+
+  .hero-img {
+    margin-top: 5rem;
+  }
+
+  .hero-img,
+  .hero-text,
+  .hero-consoles {
+    max-width: 80%;
+  }
+
+  .button-container {
+    display: flex;
+    max-width: 70%;
+  }
+
+  .diablo-button {
+    font-size: 16px;
+    padding: 10px 30px;
+    letter-spacing: 0;
+  }
+
+  .hero-consoles {
+    gap: 4.5rem;
+    flex-direction: column;
+  }
+}

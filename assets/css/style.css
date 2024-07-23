@@ -1,0 +1,743 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/diablo");
+@import url("https://db.onlinewebfonts.com/c/ce7ee1905f939d4e0f4cfcb3470c4d4e?family=Old+Fenris");
+
+:root {
+  --primary-a: #581b1b;
+  --primary-b: #040404;
+  --blanco: #ffff;
+  --text: #D2C8AE;
+  --text-dos: #878582;
+  --title: #AA9480;
+
+  --font-primary: "Alegreya Sans", sans-serif;
+  --font-diablo: "Diablo", sans-serif;
+  --font-text: "Old Fenris";
+
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--font-primary);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-b);
+  color: var(--blanco);
+}
+
+img {
+  width: 100%;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+article h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+article p {
+  margin-bottom: 10px;
+}
+
+article a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+/* section h2 {
+  border-bottom: 2px solid rgb(111, 25, 6);
+  padding-bottom: 10px;
+} */
+
+/* ------------------------------------------------------------- */
+/* ====================== HEADER ================================= */
+/* ------------------------------------------------------------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 5rem;
+  background: var(--primary-b);
+  box-shadow: 0 8px 24px rgb(145, 31, 5);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.cart-label {
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  gap: 55px;
+  margin: 0 auto;
+}
+
+.navbar-list {
+  gap: 30px;
+}
+
+ul li a {
+  font-family: var(--font-diablo);
+  color: var(--blanco);
+  padding: 5px 10px;
+  position: relative;
+  text-transform: uppercase;
+  margin: 0 10px;
+  transition: all 0.5s;
+}
+
+ul li a:hover {
+  filter: drop-shadow(rgb(111, 25, 6) 0px 0px 6px)
+    drop-shadow(rgb(111, 25, 6) 0px 0px 6px)
+    drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px)
+    drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px) brightness(1.6);
+}
+
+#menu-toggle,
+#cart-toggle,
+.menu-label {
+  display: none;
+}
+
+/* ------------------------------------------------------------- */
+/* ====================== MAIN ================================= */
+/* ------------------------------------------------------------- */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-img {
+  width: 600px;
+}
+
+.hero-text {
+  max-width: 90%;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+  color: var(--text);
+}
+
+.hero-text h3 {
+  font-family: var(--font-diablo);
+}
+
+.hero-text-filter {
+  filter: drop-shadow(rgba(179, 56, 52, 0.027) 0px 0px 1px)
+    drop-shadow(rgb(111, 25, 6) 0px 0px 6px)
+    drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px)
+    drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px) brightness(1.6);
+    margin-bottom: 1.5rem;
+}
+
+.hero-consoles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+  margin-top: 4rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.diablo-button {
+  font-family: "Diablo", sans-serif;
+  font-size: 20px;
+  color: var(--text);
+  background-image: linear-gradient(0deg, rgba(111, 25, 6, 0.82), rgba(111, 25, 6, 0.82)), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.084) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 24.58%, rgba(0, 0, 0, 0) 49.58%, rgba(0, 0, 0, 0) 76.15%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), 
+  url(../img/background.webp);
+  background-blend-mode: color, normal, normal, normal, normal;
+  padding: 15px 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: inset 0 0 5px #000;
+  position: relative;
+  z-index: 1;
+  border: 2px solid #27211c; /* Borde oscuro */
+}
+
+.diablo-button:hover {
+  filter: drop-shadow(rgba(179, 57, 52, 0.5) 0px 0px 1px) drop-shadow(rgb(111, 25, 6) 0px 0px 6px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px);
+  transition: all 0.5s ease-in;
+}
+
+.border-top {
+  margin-bottom: -1.3rem;
+}
+
+.border-bottom {
+  margin-top: -1.3rem;
+}
+
+.consoles:hover {
+  filter: drop-shadow(rgba(179, 57, 52, 0.5) 0px 0px 1px) drop-shadow(rgb(111, 25, 6) 0px 0px 6px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px);
+}
+
+.active {
+  filter: drop-shadow(rgba(219, 9, 2, 0.027) 0px 0px 1px)
+    drop-shadow(rgb(111, 25, 6) 0px 0px 6px)
+    drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px)
+    drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px) brightness(1.6);
+}
+
+/* ------------------------------------------------------------- */
+/* ===================== PRESENTACION ========================== */
+/* ------------------------------------------------------------- */
+
+#presentacion {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(0deg, rgba(111, 25, 6, 0.82), rgba(111, 25, 6, 0.82)), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.084) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 24.58%, rgba(0, 0, 0, 0) 49.58%, rgba(0, 0, 0, 0) 76.15%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), 
+  url(../img/background.webp);
+  background-blend-mode: color, normal, normal, normal, normal;
+  max-width: 2600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 7rem 0 10rem 0;
+  margin: 0 auto;
+}
+
+.presentation-img {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 66px rgba(0, 0, 0, 0.66), 0px 4px 6px rgba(0, 0, 0, 0.66);
+  margin-right: 3rem;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.presentation-img:hover {
+  transform: scale(1.05); /* Aumenta el tamaño de la tarjeta */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+}
+
+.presentation-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  gap: 20px;
+  max-width: var(--max-width);
+}
+
+.presentation-text h3 {
+  font-family: var(--font-text);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.05;
+  text-transform: uppercase;
+  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+  color: var(--text);
+}
+
+.presentation-text p {
+  margin-top: 1rem;
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+  color: var(--text-dos);
+}
+
+/* ------------------------------------------------------------- */
+/* ===================== COMO JUGAR ========================== */
+/* ------------------------------------------------------------- */
+
+#como-jugar {
+  text-align: center;
+  padding: 40px 0;
+  margin-bottom: 40px;
+}
+
+ .intro h1, h2 {
+  font-family: var(--font-text);
+  font-weight: 400;
+  line-height: 1.05;
+  text-transform: uppercase;
+  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+ .intro h2 {
+  font-size: 1rem;
+  color: var(--title);
+  margin-bottom: 0.5rem;
+}
+
+ .intro h1 {
+  font-size: 2.5rem;
+  color: var(--text);
+}
+
+ .intro p {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1em;
+  color: var(--text-dos);
+}
+
+.features {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.feature {
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: scale(1.05); /* Aumenta el tamaño de la tarjeta */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+}
+
+.feature img {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 100%;
+}
+
+.feature h3 {
+  font-family: var(--font-diablo);
+  font-size: 1.2em;
+  color: var(--text);
+  margin: 15px 0 10px;
+}
+
+.feature p {
+  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  font-size: 0.9em;
+  color: var(--text-dos);
+}
+
+/* ------------------------------------------------------------- */
+/* ====================== CLASES ================================= */
+/* ------------------------------------------------------------- */
+
+#clases {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 5rem 0 5rem 0;
+}
+
+.clases {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.clases h2 {
+  font-size: 2.5rem;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.clases p {
+  font-size: 1.2rem;
+  color: var(--text-dos);
+  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.clase-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  filter: drop-shadow(rgba(179, 57, 52, 0.5) 0px 0px 1px) drop-shadow(rgb(111, 25, 6) 0px 0px 6px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px);
+}
+
+.clase-logo:hover {
+  filter: drop-shadow(rgb(255, 255, 255) 0px 0px 1px) drop-shadow(rgb(78, 3, 3) 0px 0px 6px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px) drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px);
+  transition: all 0.5s ease-in-out;
+}
+
+.clase-imagen {
+  width: 400px;
+  height: auto;
+  margin-right: 5rem;
+}
+
+.clase-info {
+  margin-right: 2rem;
+  max-width: 400px;
+  text-align: left;
+}
+
+.clase-info h3 {
+  font-family: var(--font-diablo);
+  font-size: 1.8rem;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.clase-info p {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* ------------------------------------------------------------- */
+/* ====================== NOTICIAS ============================= */
+/* ------------------------------------------------------------- */
+
+#noticias {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.247), rgba(8, 4, 3, 0.274)), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.084) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 24.58%, rgba(0, 0, 0, 0) 49.58%, rgba(0, 0, 0, 0) 76.15%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), 
+  url(../img/background.webp);
+  background-blend-mode: color, normal, normal, normal, normal;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.news h4 {
+  font-family: var(--font-text);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.05;
+  text-transform: uppercase;
+  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+  color: var(--text);
+}
+
+.news-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px;
+}
+
+ .card {
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.8) linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.01) 100%);
+  border: 1px solid #444;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta el tamaño de la tarjeta */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+}
+
+.card-header img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-body h2 {
+  font-weight: 400;
+  line-height: 0.9;
+  text-transform: uppercase;
+  text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+  color: #B0AFAC;
+  line-height: 30px;
+  z-index: 1;
+  position: relative;
+  font-size: 18px;
+  padding: 0 0 20px 0;
+  font-family: var(--font-diablo);
+}
+
+.card-body p {
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  color: var(--text-dos);
+} 
+
+/* ------------------------------------------------------------- */
+/* ====================== CONTACTO ============================= */
+/* ------------------------------------------------------------- */
+
+.contacto {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.contacto h2 {
+  font-size: 2em;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.contacto p {
+  font-size: 1em;
+  color: #ccc;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacto form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--primary-b);
+  filter: drop-shadow(rgb(111, 25, 6) 0px 0px 6px)
+    drop-shadow(rgb(111, 25, 6) 0px 0px 6px)
+    drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 1px)
+    drop-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px) brightness(1.6);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  color: var(--text);
+}
+
+.button-contact {
+  background: var(--primary-a);
+  color: #1a1a1a;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button-contact:hover {
+  transition: all 0.5s ease;
+  background-color: var(--primary-b);
+  color: var(--primary-a);
+  font-weight: 900;
+}
+
+/* ------------------------------------------------------------- */
+/* ====================== FOOTER ============================= */
+/* ------------------------------------------------------------- */
+
+.footer {
+  background: var(--primary-b);
+  box-shadow: 0 8px 24px rgb(124, 10, 10);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer .footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer .footer-section h2 {
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.footer .footer-section p, 
+.footer .footer-section ul {
+  font-size: 0.9rem;
+  color: var(--blanco);
+}
+
+.footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer .footer-section ul li a {
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.3s;
+}
+
+.footer .footer-section ul li a:hover {
+  color: var(--blanco);
+}
+
+.footer .footer-bottom {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  font-size: 0.8em;
+  color: #ccc;
+}
+
+.footer .fa {
+  margin-right: 10px;
+}
+
+/* ------------------------------------------------------------- */
+/* ====================== INICIO DE SESION ===================== */
+/* ------------------------------------------------------------- */
+.register-link {
+  margin-top: 1rem;
+}
+
+.register-link, .login-link {
+  font-family: var(--font-text);
+  text-align: center;
+}
+
+.register-link a, .login-link a {
+  font-family: var(--font-text);
+  color: var(--text);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#register-btn {
+  margin-left: 0.3rem;
+}
+
+/* .class-card {
+  background-color: #1e1e1e;
+  border: 2px solid var(--primary-b);
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  transition: transform 0.3s;
+}
+
+.class-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.class-card p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.class-card:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: none;
+  }
+} */
+
+

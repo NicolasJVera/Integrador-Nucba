@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diablo IV - Integrador</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+    <link rel="stylesheet" href="assets/css/animation.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#inicio">
+        <img src="assets/img/icons/logo-diablo.png" alt="Logo Diablo" />
+      </a>
+      <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+
+        <ul class="navbar-list">
+          <li><a href="#presentacion">Presentación</a></li>
+          <li><a href="#como-jugar">Introduccion</a></li>
+          <li><a href="#clases">Clases</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="">
+        <a href="iniciar-sesion.html">
+          <i class="fa-regular fa-user fa-beat-fade fa-xl" style="color: #8f1616;"></i>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-img">
+          <img src="assets/img/icons/diablo-IV.webp" alt="Hero Diablo" />
+        </div>
+        <div class="hero-text">
+          <h3 class="hero-text-filter">
+            Bienvenido al oscuro y peligroso mundo de Santuario. Diablo IV es la
+            próxima entrega de la icónica serie de juegos de rol de acción de
+            Blizzard Entertainment.
+          </h3>
+          <p>RPG de accion</p>
+        </div>
+
+        <div class="button-container">
+          <button class="diablo-button">PRECOMPRAR</button>
+        </div>
+
+        <div class="hero-consoles">
+          <i class="fa-brands fa-battle-net fa-2xl consoles active"></i>
+          <i class="fa-brands fa-steam fa-2xl consoles"></i>
+          <i class="fa-brands fa-xbox fa-2xl consoles"></i>
+          <i class="fa-brands fa-playstation fa-2xl consoles"></i>
+        </div>
+      </section>
+
+      <div>
+        <img
+          class="border-top"
+          src="./assets/img/borde-top.webp"
+          alt="Borde-Top"
+        />
+      </div>
+
+      <section id="presentacion">
+        <div class="presentation-text">
+          <h3>Ya esta disponible: Diablo IV</h3>
+          <p>
+            Diablo IV lleva a los jugadores a un mundo abierto lleno de terror y
+            aventura. Enfréntate a demonios, explora vastos paisajes y descubre
+            la historia detrás del regreso de Lilith, la Reina de los Súcubos.
+            El juego presenta una experiencia multijugador fluida con eventos en
+            mundo abierto, calabozos generados proceduralmente y una narrativa
+            envolvente que evoluciona con el tiempo.
+          </p>
+        </div>
+        <div class="presentation-img">
+          <img
+            src="./assets/img/temp.webp"
+            alt="Diablo IV - Presentacion"
+          />
+        </div>
+      </section>
+
+      <div>
+        <img
+          class="border-bottom"
+          src="./assets/img/borde-bottom.webp"
+          alt="Borde-Bottom"
+        />
+      </div>
+
+      <div class="backgroundScroll">
+        <section id="como-jugar">
+          <div class="intro">
+            <h2>Juega a tu manera</h2>
+            <h1>Cómo Jugar a Diablo IV</h1>
+            <p>
+              Crea una experiencia única y personalizada. Decide la apariencia de
+              tu personaje, las habilidades escogidas para deshacerte de los
+              sanguinarios esbirros del infierno o la forma en la que el equipo
+              que encuentres puede mejorar las facultades o transformar el aspecto
+              de tu caminante.
+            </p>
+          </div>
+          <div class="features">
+            <div class="feature">
+              <img
+                src="./assets/img/creacion-pjs.webp"
+                alt="Creación de Personajes"
+              />
+              <h3>CREACIÓN DE PERSONAJES</h3>
+              <p>
+                Existen más de 8 billones de combinaciones de apariencia. Cada
+                clase tiene peinados únicos y puedes decidir sobre el aspecto de
+                tu personaje hasta en el color de los ojos, los tatuajes, los
+                accesorios y mucho más.
+              </p>
+            </div>
+            <div class="feature">
+              <img src="./assets/img/equipo.webp" alt="Equipo" />
+              <h3>EQUIPO</h3>
+              <p>
+                Entre los objetos y botines que descubrirás en tu viaje, podrás
+                encontrar equipo que quizá se convierta en tu favorito. Desarrolla
+                tu estilo de juego utilizando estos objetos tal cual los
+                encuentres o adáptalos extrayendo sus bonus o creando
+                modificaciones específicas.
+              </p>
+            </div>
+            <div class="feature">
+              <img src="./assets/img/arbol.webp" alt="Árboles de Habilidades" />
+              <h3>ÁRBOLES DE HABILIDADES</h3>
+              <p>
+                A medida que subas de nivel, podrás elegir entre categorías de
+                habilidades para potenciar a tu personaje. Mejora las habilidades
+                pasivas, ofensivas, defensivas y elementales, así como las
+                facultades existentes y mucho más.
+              </p>
+            </div>
+            <div class="feature">
+              <img src="./assets/img/panel.webp" alt="Paneles de Leyenda" />
+              <h3>PANELES DE LEYENDA</h3>
+              <p>
+                En la fase avanzada del juego, podrás seguir ampliando y
+                modificando la configuración y las habilidades de tu personaje
+                usando los puntos de leyenda para mejorar las estadísticas o
+                conseguir efectos más poderosos. Concibe y diseña tu propia
+                configuración específica.
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <section id="clases" class="clases">
+          <h2>Clases del Juego</h2>
+          <p>
+            Explora las diferentes clases disponibles en nuestro MMORPG y descubre
+            cuál se adapta mejor a tu estilo de juego.
+          </p>
+          <div class="clase">
+            <img
+              src="./assets/img/icons/class-icon-barbaro.webp"
+              alt="Logo Barbaro"
+              class="clase-logo"
+            />
+            <img
+              src="./assets/img/clases/clase-barbarian.webp"
+              alt="Imagen Barbaro"
+              class="clase-imagen"
+            />
+
+            <div class="clase-info">
+              <h3>Bárbaro</h3>
+              <p>
+                El Bárbaro es un guerrero feroz que utiliza su fuerza bruta para
+                aplastar a sus enemigos. Puede cambiar rápidamente entre armas y
+                realizar ataques devastadores.
+              </p>
+              <p>
+                <strong>Habilidades:</strong> Aplastar, Torbellino, Grito de
+                Guerra.
+              </p>
+            </div>
+          </div>
+  
+          <div class="clase">
+            <img
+              src="./assets/img/icons/class-icon-druida.webp"
+              alt="Logo Druida"
+              class="clase-logo"
+            />
+            <img
+              src="./assets/img/clases/clase-druida.webp"
+              alt="Imagen Druida"
+              class="clase-imagen"
+            />
+            <div class="clase-info">
+              <h3>Druida</h3>
+              <p>
+                El Druida es un maestro de la naturaleza que puede transformarse
+                en feroces bestias y controlar las fuerzas elementales. Sus
+                habilidades versátiles le permiten adaptarse a cualquier
+                situación.
+              </p>
+              <p>
+                <strong>Habilidades:</strong> Transformación en Oso, Tormenta,
+                Invocación de Lobos.
+              </p>
+            </div>
+          </div>
+  
+          <div class="clase">
+            <img
+              src="./assets/img/icons/class-icon-hechicero.webp"
+              alt="Logo Mago"
+              class="clase-logo"
+            />
+            <img
+              src="./assets/img/clases/clase-sorcerer.webp"
+              alt="Imagen Mago"
+              class="clase-imagen"
+            />
+            <div class="clase-info">
+              <h3>Hechicera</h3>
+              <p>
+                La Hechicera domina la magia elemental. Invoca relámpagos, bolas
+                de fuego y tormentas de hielo para diezmar a sus enemigos desde
+                lejos.
+              </p>
+              <p>
+                <strong>Habilidades:</strong> Rayo, Bola de Fuego, Tornado de
+                Hielo.
+              </p>
+            </div>
+          </div>
+  
+          <div class="clase">
+            <img
+              src="./assets/img/icons/class-icon-nigromante.webp"
+              alt="Logo Mago"
+              class="clase-logo"
+            />
+            <img
+              src="./assets/img/clases/clase-necromancer.webp"
+              alt="Imagen Mago"
+              class="clase-imagen"
+            />
+            <div class="clase-info">
+              <h3>Nigromante</h3>
+              <p>
+                La Nigromante puede invocar a los muertos y utilizar la magia
+                oscura para vencer a sus enemigos. Controla ejércitos de
+                esqueletos y lanza poderosos hechizos de muerte.
+              </p>
+              <p>
+                <strong>Habilidades:</strong> Invocación de Esqueletos, Explosión
+                de Cadáveres, Maldición de la Peste.
+              </p>
+            </div>
+          </div>
+  
+          <div class="clase">
+            <img
+              src="./assets/img/icons/class-icon-picaro.webp"
+              alt="Logo Mago"
+              class="clase-logo"
+            />
+            <img
+              src="./assets/img/clases/clase-rogue.webp"
+              alt="Imagen Mago"
+              class="clase-imagen"
+            />
+            <div class="clase-info">
+              <h3>Pícara</h3>
+              <p>
+                La Pícara es una asesina ágil y letal, experta en ataques rápidos
+                y mortales. Utiliza una combinación de habilidades de sigilo y
+                combate a distancia.
+              </p>
+              <p>
+                <strong>Habilidades:</strong> Flecha envenenada, Golpe Sombrío,
+                Trampa de Pinchos.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <img
+          class="border-top"
+          src="./assets/img/borde-top.webp"
+          alt="Borde-Top"
+        />
+      </div>
+
+      <section id="noticias" class="news">
+        <h4>Últimas Noticias</h4>
+        <div class="news-container">
+          <article class="card">
+            <div class="card-header">
+              <img
+                src="./assets/img/temp.webp"
+                alt="Diablo IV Campfire Chat Recap"
+              />
+            </div>
+            <div class="card-body">
+              <h2>Nuevo Tráiler Revelado</h2>
+              <p>
+                Descubre el nuevo tráiler de Diablo IV, que muestra las nuevas
+                habilidades de los personajes y los oscuros paisajes que podrás
+                explorar.
+              </p>
+              <a href="#">Leer más</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <img
+                src="./assets/img/noticias/noticia.webp"
+                alt="Actualizacion Diablo IV"
+              />
+            </div>
+            <div class="card-body">
+              <h2>Actualización de Desarrollo</h2>
+              <p>
+                El equipo de desarrollo de Diablo IV ha compartido detalles
+                sobre el progreso del juego y las características que se están
+                trabajando.
+              </p>
+              <a href="#">Leer más</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <img
+                src="./assets/img/noticias/evento.webp"
+                alt="Eventos Diablo IV"
+              />
+            </div>
+            <div class="card-body">
+              <h2>Eventos de Temporada</h2>
+              <p>
+                Los eventos de temporada ofrecerán nuevos desafíos y recompensas
+                exclusivas para los jugadores más dedicados. ¡Prepárate para
+                enfrentar lo inesperado!
+              </p>
+              <a href="#">Leer más</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <img
+                src="./assets/img/noticias/multijugador.webp"
+                alt="Multijuador Diablo IV"
+              />
+            </div>
+            <div class="card-body">
+              <h2>Avances en el Sistema Multijugador</h2>
+              <p>
+                Explora cómo el sistema multijugador de Diablo IV permitirá a
+                los jugadores unirse y enfrentarse a desafíos en mundo abierto
+                junto a amigos y otros aventureros.
+              </p>
+              <a href="#">Leer más</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div>
+        <img
+          class="border-bottom"
+          src="./assets/img/borde-bottom.webp"
+          alt="Borde-Top"
+        />
+      </div>
+
+      <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>
+          Si tienes alguna pregunta o comentario, no dudes en ponerte en
+          contacto con nosotros utilizando el siguiente formulario.
+        </p>
+        <form>
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button class="button-contact" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h2>Diablo IV</h2>
+          <p>
+            Sumérgete en el mundo oscuro y brutal de Santuario. Diablo IV te
+            ofrece una experiencia inmersiva y cautivadora que te llevará a
+            enfrentar a los demonios más temibles.
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h2>Enlaces Útiles</h2>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#presentacion">Presentacion</a></li>
+            <li><a href="#clases">Clases</a></li>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h2>Contacto</h2>
+          <p><i class="fa fa-envelope"></i> contacto@diabloiv.com</p>
+          <p><i class="fa fa-phone"></i> +1 234 567 890</p>
+          <p><i class="fa fa-map-marker"></i> Calle Falsa 123, Infierno</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
