@@ -12,6 +12,38 @@
 }
 
 /* Responsive Styles */
+
+@media (min-width: 1200px) {
+  .border-top,
+  .border-bottom {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  
+  /* presentacion */
+  #presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .presentation-text,
+  .presentation-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  .presentation-img {
+    max-width: var(--max-width);
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 992px) {
   /* Header */
   .navbar-list {
@@ -55,47 +87,31 @@
     max-width: 700px;
   }
 
-  /* presentacion */
-  #presentacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .presentation-text,
-  .presentation-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-  }
-
-  .presentation-img {
-    margin-right: 0;
-  }
-
   /* COMO JUGAR */
 
-
   /* CLASES */
+
   .clase {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    max-width: 100%;
+    overflow: hidden; 
+    padding: 0 10px;
   }
 
-  .clase-img,
+  .clase-imagen {
+    width: 250px;
+    height: 100%;
+  }
+
   .clase-logo {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
   .clase-info {
-    justify-content: center;
+    max-width: 100%;
+    word-wrap: break-word;
     text-align: center;
   }
-
 
   .news h4 {
     font-size: 20px;
@@ -113,7 +129,7 @@
     padding: 15px;
   }
 
-  button {
+  .button-contact {
     width: 80%;
   }
 }

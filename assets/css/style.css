@@ -24,6 +24,7 @@
   list-style: none;
   text-decoration: none;
   font-family: var(--font-primary);
+  /* outline: 1px solid red;  */
 }
 
 body {
@@ -135,6 +136,9 @@ ul li a:hover {
 /* ------------------------------------------------------------- */
 
 .hero {
+  max-width: var(--max-width); 
+  margin: 0 auto;
+  padding: 0 20px; 
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -148,7 +152,7 @@ ul li a:hover {
 }
 
 .hero-text {
-  max-width: 90%;
+  max-width: var(--max-width);
   font-size: 1.1rem;
   margin-top: 2rem;
   text-align: center;
@@ -238,12 +242,12 @@ ul li a:hover {
   background-image: linear-gradient(0deg, rgba(111, 25, 6, 0.82), rgba(111, 25, 6, 0.82)), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.084) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 24.58%, rgba(0, 0, 0, 0) 49.58%, rgba(0, 0, 0, 0) 76.15%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), 
   url(../img/background.webp);
   background-blend-mode: color, normal, normal, normal, normal;
-  max-width: 2600px;
+  max-width: var(--max-width);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
-  padding: 7rem 0 10rem 0;
+  gap: 50px;
+  padding: 7rem 0 7rem 0;
   margin: 0 auto;
 }
 
@@ -251,7 +255,7 @@ ul li a:hover {
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0px 0px 66px rgba(0, 0, 0, 0.66), 0px 4px 6px rgba(0, 0, 0, 0.66);
   margin-right: 3rem;
-  width: 100%;
+  width: 1500px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -268,6 +272,8 @@ ul li a:hover {
   margin-left: 2rem;
   gap: 20px;
   max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .presentation-text h3 {
@@ -295,9 +301,17 @@ ul li a:hover {
 /* ------------------------------------------------------------- */
 
 #como-jugar {
+  max-width: var(--max-width); 
+  margin: 0 auto;
+  margin-bottom: 50px;
   text-align: center;
-  padding: 40px 0;
-  margin-bottom: 40px;
+  padding: 40px 20px;
+}
+
+.intro {
+  max-width: var(--max-width); 
+  margin: 0 auto;
+  padding: 0 20px; 
 }
 
  .intro h1, h2 {
@@ -374,27 +388,28 @@ ul li a:hover {
 /* ------------------------------------------------------------- */
 
 #clases {
-  width: 100%;
+  max-width: var(--max-width); 
+  margin: 0 auto;
+  padding: 0 20px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 100px;
-  padding: 5rem 0 5rem 0;
+  gap: 30px;
 }
 
-.clases {
+.clases-container {
   text-align: center;
   padding: 40px 0;
 }
 
-.clases h2 {
+.clases-container h2 {
   font-size: 2.5rem;
   color: var(--text);
   margin-bottom: 20px;
 }
 
-.clases p {
+.clases-container p {
   font-size: 1.2rem;
   color: var(--text-dos);
   text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
@@ -405,12 +420,15 @@ ul li a:hover {
 }
 
 .clase {
+  max-width: var(--max-width); 
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0 20px; 
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 100px;
 }
 
 .clase-logo {
@@ -427,12 +445,9 @@ ul li a:hover {
 
 .clase-imagen {
   width: 400px;
-  height: auto;
-  margin-right: 5rem;
 }
 
 .clase-info {
-  margin-right: 2rem;
   max-width: 400px;
   text-align: left;
 }
@@ -459,7 +474,10 @@ ul li a:hover {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.247), rgba(8, 4, 3, 0.274)), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.084) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 24.58%, rgba(0, 0, 0, 0) 49.58%, rgba(0, 0, 0, 0) 76.15%, #000000 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), 
   url(../img/background.webp);
   background-blend-mode: color, normal, normal, normal, normal;
-  padding: 70px 0;
+  max-width: var(--max-width); 
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -539,8 +557,11 @@ ul li a:hover {
 /* ------------------------------------------------------------- */
 
 .contacto {
+  max-width: var(--max-width); 
+  margin: 0 auto;
+  margin-bottom: 50px;
   text-align: center;
-  padding: 40px 0;
+  padding: 20px 20px;
 }
 
 .contacto h2 {
@@ -622,7 +643,7 @@ ul li a:hover {
 .footer {
   background: var(--primary-b);
   box-shadow: 0 8px 24px rgb(124, 10, 10);
-  padding: 40px 0;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -631,7 +652,7 @@ ul li a:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 20px;
 }
